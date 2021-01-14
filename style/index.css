@@ -1,1 +1,179 @@
 /* Add CSS styling here */
+@keyframes slideinl {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideinr {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body {
+    background: #2f3031;
+    box-sizing: border-box;
+}
+
+* {
+    color: #efefef;
+}
+
+header {
+    background: url(https://image.freepik.com/free-vector/seamless-dark-metal-hexagon-3d-pattern-background_1053-1184.jpg);
+    animation: 1s ease-in-out slideinl;
+}
+
+h1 {
+    margin-left: 20px;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+
+header nav {
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    animation: 2s ease-in slideinl;
+}
+
+header nav a {
+    font-size: 1.75rem;
+    text-decoration: none;
+    font-family: Impact;
+    background: lightgray;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    color: black;
+    transition: .5s;
+}
+
+header nav a:hover {
+    font-size: 2rem;
+    width: 200px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+    border: 5px solid black;
+    padding: 0px 60px;
+    background: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Free-Seamless-Carbon-Fiber-Texture.jpg);
+    animation: 1s slideinr;
+}
+
+.intro #photo {
+    width: 30vh;
+    
+}
+
+.intro #text {
+    display: inline;
+    width: 60vh;
+    text-align: end;
+    font-family: sans-serif;
+}
+
+.intro #text h2 {
+    font-size: 40px;
+}
+
+.intro #text a {
+    padding: 10px;
+    background: lightgray;
+    color: black;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.intro #text a:hover {
+    padding: 12px 30px;
+}
+
+.intro #text p {
+    font-size: 1.25rem;
+}
+
+.gallery {
+    display:flex;
+    flex-flow: row wrap;
+    width: 80vw;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin: 0% 10% 0% 10%;
+    
+}
+
+.gallery .photo {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background: url(https://picsum.photos/536/354);
+    justify-content: center;
+    align-items: flex-end;
+    transition: .3s;
+}
+
+.gallery .photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .photo:hover {
+    width: 350px;
+    height: 250px;
+}
+
+.gallery .photo .popup {
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
+    opacity: 0;
+}
+
+.gallery .photo:hover .popup {
+    opacity: 1;
+}
+
+footer {
+    background: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Free-Seamless-Carbon-Fiber-Texture.jpg);
+    text-align: center;
+    animation: 1s slideinr;
+}
+
+footer h3 {
+    font-size: 50px;
+    font-family: fantasy;
+    letter-spacing: 7px;
+    margin-top: 5px;
+}
+
+footer a {
+    padding: 10px;
+    margin: 10px;
+    background: lightgray;
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    transition: .3s;
+}
+
+footer a:hover {
+    background: gray;
+    font-size: 2rem;
+}
+
+footer p .social {
+    background: none;
+    text-decoration: none;
+    color: white;
+}
