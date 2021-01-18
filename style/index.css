@@ -200,8 +200,16 @@ footer p .social {
         text-align: center;
     }
 
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
     header nav a {
         font-size: 1rem;
+        margin: 2%;
+        width: 50vw;
     }
 
     .intro {
