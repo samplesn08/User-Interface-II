@@ -71,7 +71,6 @@ header nav a:hover {
 
 .intro #photo {
     width: 30vh;
-    
 }
 
 .intro #text {
@@ -173,6 +172,72 @@ footer p .social {
 }
 
 /*tablet sizing styles*/
+@media (max-width: 800px) {
+    .intro {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .intro #text{
+        margin: 2% 0;
+        padding: 0;
+    }
+    
+    .intro #text h2 {
+        font-size: 2.5rem;
+        width: 100%;
+    }
 
+    .intro #text p{
+        font-size: 1rem;
+    }
+}
 
 /*phone sizing styles*/
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    header nav a {
+        font-size: 1rem;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro #text {
+        text-align: center;
+    }
+
+    .intro #text h2 {
+        font-size: 2rem;
+    }
+
+    .intro #text p {
+        margin: 5% 8%;
+        font-size: 1rem;
+    }
+
+    .gallery {
+        width: 85%;
+    }
+    .gallery .photo .popup {
+        font-size: 1rem;
+    }
+
+    .gallery .photo:hover {
+        width: 20vh;
+    }
+
+    footer h3 {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+    }
+
+    footer a:hover {
+        font-size: 1.5rem;
+    }
+}
