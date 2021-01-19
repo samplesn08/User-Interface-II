@@ -116,6 +116,7 @@ header nav a:hover {
     height: 20vh;
     margin: 3%;
     background: url(https://picsum.photos/536/354);
+    background-size: cover;
     justify-content: center;
     align-items: flex-end;
     transition: .3s;
